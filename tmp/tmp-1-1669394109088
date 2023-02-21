@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function call()
+{
+ switch(cars.selectedIndex)
+ {
+  case 1:
+  htm="Ex-Showroom Price: From ?10.9 lakhs<br>"
+  htm+="Fuel economy: 18-24 km/1 combined<br>"
+  htm+="Dimension: 4.549 mm L z 1,748 mm W x 1,489 mm H<br>"
+  htm+="Cargo volume: 506 L<br>"
+  htm+="Fuel tank capacity: 40L"
+  break;
+ }
+ result.innerHTML=htm
+}
+</script>
+</head>
+<body>
+<select id='cars' onchange="call()">
+<option>--select--</option>
+<option value="20000/-">Maruti ciaz</option>
+<option>Honda city</option>
+<option>Verna</option>
+</select><br><br>
+<div id=result'>
+see
+</div>
+</body>
+</html>

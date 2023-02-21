@@ -1,0 +1,42 @@
+<%-include('../../Header.ejs')%>
+<div class="container mt-1 mb-3">
+    <div class="row">
+        <div class="col-md-12">
+            <%-include('../components/adminsidebar.ejs')%>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 mt-3 shadow-lg p-4 doubleBg rounded">
+                    <center><h2 class="mb-5 headingText"><i class="fa-solid fa-circle-plus"></i>Category Display</h2></center>
+                    <div class="overflow-x auto">
+                        <table class=" table text-white" id="myTable">
+                            <thead>
+                                <th>#id</th>
+                                <th>Category Name</th>
+                            </thead>
+                            <tbody>
+                                <%
+                                var i=1
+                                result.forEach((item)=>{
+                        %>
+                                <tr>
+                                    <td class="text-white"><%=i++%></td>
+                                                                <td class="text-white"><%=item.cname%></td>
+                                                                <td class="d-flex flex-nowrap gap-20px text-white">
+                                                                    <a href= "/admin/viewcategory/<%= item._id %>" class="button-85 text-decoration-none">View</a>
+                                                                   
+                                                                    <a href="/admin/editcategory/<%=item._id%>" class="button-85 text-decoration-none">Edit</a>
+                                                                    <a href="/admin/deletecategory/<%-item._id%>" class="button-85 text-decoration-none">Delete</a>
+                                                                </td>
+                                </tr>
+                                <% })%>
+                            </tbody>
+                            </table>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+        </div>
+<%-include('../../footer.ejs')%>

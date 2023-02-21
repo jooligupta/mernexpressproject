@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- Bootstrap 5 CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/css/style2.css"/>
+</head>
+<body>
+     <section id="header">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/bloglogo.png" class="img-fluid" width="40px">
+         <!--  <h1>Shopcorn</h1> -->
+        </a>
+        <ul class="navbar-nav ">
+            <li class="nav-item">
+                <a class="nav-link active"  arial-current="page" href="#home">Home</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link "  arial-current="page" href="#about">About</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link "  arial-current="page" href="#contact">Contact</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link"  arial-current="page" href="#blog">Blog</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="ti-align-justify navbar-toggler-icon"></span> hamburger menu -->
+          <i class="fa-regular fa-bars" style="color: yellow;"></i>
+          <!--hamburger menu-->
+        </button>        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active ml-4" aria-current="page" href="#login">Login</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!--########## NAVIGATION SECTION END ##################-->
+	<section class="blog-detail" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
+                   
+             <h1><%=result.name%></h1><br><br>
+          
+            <img src="/images/banner3.jpeg" class="img-fluid d"/>
+            <p style="text-align: justify; margin-right: 65px; letter-spacing:0.9px ; margin-top: 70px; margin-bottom:5rem;"><%=result.description%>.</p>
+       
+        </div>
+        <div class="col-md-4">
+            <div class="blog-right">
+                <div class="right-widget recent-post">
+                    <h3>Recent Blogs</h3>
+                    <a href="">
+                               
+                                <div class="rb-box">
+                                    <div class="rb-box-img">
+                                        <img src="/images/banner1.jpg"  style="width: 150px;height:100px;border-radius:10px">
+                                    </div>
+                                    <div class="rb-box-desc">
+                               
+                                        <h4>Happy Couple</h4>
+                                        <p>Posted On: Sat Jul 23 2022 16:34:32 GMT+0000 (Coordinated Universal Time)</p>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </a>
+                            <a href="/detail/62dc278dd27812d4dc2f29ea">
+                               
+                                <div class="rb-box">
+                                    <div class="rb-box-img">
+                                        <img src="/images/banner2.jpg" style="width: 150px;height:100px;border-radius:10px">
+                                    </div>
+                                    <div class="rb-box-desc">
+                               
+                                        <h4>Stocks</h4>
+                                        <p>Posted On: Sat Jul 23 2022 16:53:33 GMT+0000 (Coordinated Universal Time)</p>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </a>
+                            <a href="/detail/62dc28aed27812d4dc2f29f8">
+                               
+                                <div class="rb-box">
+                                    <div class="rb-box-img">
+                                        <img src="/images/banner3.jpeg" style="width: 150px;height:100px;border-radius:10px">
+                                    </div>
+                                    <div class="rb-box-desc">
+                               
+                                        <h4>Travel</h4>
+                                        <p>Posted On: Sat Jul 23 2022 16:58:22 GMT+0000 (Coordinated Universal Time)</p>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </a>
+                            <a href="/detail/62e944f513ec062530b29257">
+                               
+                                <div class="rb-box">
+                                    <div class="rb-box-img">
+                                        <img src="/images/banner1.jpg" style="width: 150px;height:100px;border-radius:10px">
+                                    </div>
+                                    <div class="rb-box-desc">
+                               
+                                        <h4>Programming</h4>
+                                        <p>Posted On: Tue Aug 02 2022 15:38:29 GMT+0000 (Coordinated Universal Time)</p>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </a>
+                </div>
+                <div class="right-widget categories">
+                    <h3>Categories</h3>
+                    <ul>
+                                 
+                                <li><a href="#">Travel</a></li>
+                                 
+                                <li><a href="#">Stocks</a></li>
+                                 
+                                <li><a href="#">Others</a></li>
+                                
+                                
+                            </ul>
+                </div>
+            </div>
+        </div>
+</div>
+        </div>
+        </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <div>Designed By Kunal Sharma</div>
+            </div>
+        </div> 
+    
+    </footer>
+	
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<%-include('../../Header.ejs')%>
+<div class="container mt-5 mb-5 h-69vh">
+    <div class="row">
+        <div class="col-md-12">
+          <%-include('../components/adminsidebar.ejs')%>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 mt-3 shadow-lg p-4 doubleBg rounded">
+<center><h2 class="mb-5 headingText"><i class="fa-solid fa-circle-plus"></i> Add Blog</h2></center>
+<form action="/admin/bloginsert" method="POST" enctype="multipart/form-data"> 
+    <div class="mb-3">
+        <label role="button" for="name" class="text-white"><i class="fa-solid fa-pen-nib"></i> Name</label>
+        <input type="text" class="form-control" id="title" name="Name1" placeholder="Enter Name">
+    </div>
+    <div class="mb-3">
+        <label role="button" for="description" class="text-white"><i class="fa-solid fa-clipboard"></i> Description</label>
+        <input type="text" class="form-control" id="description" name="description" placeholder="Enter Description">
+    </div>
+    <div class="mb-3">
+      <label role="button" for="description" class="text-white"><i class="fa-solid fa-clipboard"></i> Image</label>
+      <input type="file" class="form-control" id="image" name="image"/>
+  </div>
+    <button type="submit" class="button-85">Submit</button>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<%-include('../../Footer.ejs')%>
